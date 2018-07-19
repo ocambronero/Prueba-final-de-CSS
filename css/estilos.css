@@ -1,0 +1,137 @@
+body {
+	font-family: Dancing Script;
+	background-color: #02010a;
+}
+
+.contenido {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.contenido div{
+	box-sizing: border-box;
+	min-width: 150px;
+	padding: 0px;
+}
+
+.encabezado{
+	background-color: #5b7989;
+	text-shadow: 2px 2px 2px #02010a;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.fotoprincipal {
+	background-color:  #82c3a6;
+}
+
+.fotoprincipal img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px #02010a;
+}
+
+.foto2 img, .foto3 img{
+	box-shadow: 2px 2px #02010a;
+	border: 1px solid #d5c75f;
+}
+
+.foto2, .foto3 {
+	background-color: #d5c75f;
+}
+
+.foto2 img:hover{
+	transform: rotate(10deg);
+	border: 2px solid #82c3a6;
+}
+
+.foto3 img:hover{
+	transform: translate(20px,-5px);
+	border: 2px solid #82c3a6;
+}
+
+.contenido, .encabezado, .cuerpo, .pie  {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+@media (min-width: 900px){
+	.header1{
+		width: 60%;
+		text-align: left;
+		margin-left: 10px;
+	}
+
+	.header2{
+		width: 35%;
+		text-align: right;
+		margin-top: 35px;
+	}
+
+	.fotoprincipal{
+		width: 100%;
+	}
+	.foto2, .foto3{
+		width: 50%;
+	}
+
+	.contenido, .encabezado, .pie{
+		width: 900px;
+	}
+	.contacto, .terminos, .redes, .derechos{
+		width: 25%;
+	}
+}
+
+@media (max-width: 900px){
+	.fotoprincipal{
+		width: 100%;
+	}
+	.foto2, .foto3{
+		width: 100%;
+	}
+	.contenido, .cuerpo, .encabezado, .pie{
+		width: 100%;
+	}
+	.header1{
+		width: 100%;
+		text-align: center;
+	}
+	.header2{
+		width: 100%;
+		text-align: center;
+	}
+	.contacto, .terminos, .redes, .derechos{
+		width: 100%;
+	}
+}
+
+.pie {
+	background-color: #C6d5c5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+	}
+
+.encabezado {
+	animation-name: animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	animation-delay: 2s;
+
+	}
+
+	@keyframes animacion {
+	0% {
+			margin-top: 0px;
+	}
+	60% {
+			margin-top: -5px;
+	}
+	100% {
+			margin-top: 150px;
+	}
+	}
